@@ -27,7 +27,7 @@ jobs:
         
       - name: create csv file
         run: python generate.py
-     # lägg till create csv file (glöm inte pip install)
+    
       # lägg till Create JSON file
       # Köra ehnetstester  VG    
       - name: Copy to dist
