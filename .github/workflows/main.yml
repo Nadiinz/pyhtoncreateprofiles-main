@@ -27,8 +27,11 @@ jobs:
         
       - name: create csv file
         run: python generate.py
+
+      - name: Convert CSV to JSON file
+        run: python csvtojson.py
     
-      # lägg till Create JSON file
+  
       # Köra ehnetstester  VG    
       - name: Copy to dist
         run: |
