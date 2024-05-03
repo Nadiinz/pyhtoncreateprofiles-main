@@ -31,8 +31,9 @@ jobs:
       - name: Convert CSV to JSON file
         run: python csvtojson.py
     
-  
-      # Köra ehnetstester  VG    
+      - name: Unittester
+        run: python tester.py
+         
       - name: Copy to dist
         run: |
           mkdir dist
