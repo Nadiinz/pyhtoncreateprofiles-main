@@ -21,9 +21,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world! 
+        
+      - name: pip install
+        run: pip install faker
+        
+      - name: create csv file
+        run: python generate.py
      # lägg till create csv file (glöm inte pip install)
       # lägg till Create JSON file
-      # Köra ehnetstester      
+      # Köra ehnetstester  VG    
       - name: Copy to dist
         run: |
           mkdir dist
